@@ -3,24 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Registration</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    
     <header>
         <img src="Chris' Choice Groceries.png" alt="Chris' Choice Groceries">
     </header>
 
-  
     <nav>
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="about-us.html">About Us</a>
         <a href="contact-us.html">Contact Us</a>
-        <a href="registration.html">Registration</a>
+        <a href="registration.html">Account</a>
     </nav>
+
     <h1>Registration</h1>
+
+    <form action="login.html" method="get">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Register</button>
+        
+        <!-- Button for redirection to login page -->
+        <button class="redirect-btn" onclick="location.href='login.html'">Already have an account? Login here</button>
+    </form>
 </body>
 </html>
-
